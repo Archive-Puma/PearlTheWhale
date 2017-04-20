@@ -81,7 +81,7 @@ dstop_all(){
 
 # KALI LINUX LIGHT VERSION #
 _dkali(){
-	_kalilight		#kali version with most important tools is expected
+	_dkalilight		#kali version with most important tools is expected
 }
 
 _dkalilight(){
