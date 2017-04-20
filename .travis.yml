@@ -6,6 +6,7 @@ services:
 
 before_script:
   - bash Linux/autoalias.sh
+  - source ~/.bashrc
 
 script:
   - dalias
