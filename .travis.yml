@@ -5,8 +5,7 @@ services:
   - docker
 
 before_script:
-  - bash Linux/autoalias.sh
-  - source ~/.bashrc
+  - source Linux/.dockerfunc
 
 script:
   - dalias
