@@ -1,0 +1,14 @@
+sudo: required
+language: bash
+
+services:
+  - docker
+
+before_script:
+  - bash Linux/autoalias.sh
+
+script:
+  - dalias
+  - _kali
+  - _machinelearning
+  - dtelnet localhost
