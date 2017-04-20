@@ -10,5 +10,7 @@ before_script:
 script:
   - dalias
   - _kali
+  - drm kali
   - _machinelearning
+  - drm_all
   - dtelnet localhost
