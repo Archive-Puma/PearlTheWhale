@@ -231,6 +231,8 @@ declipse(){
 	docker run -it -e DISPLAY \
 	--name eclipse \
 	-v $HOME:/sharedfolder \
+	-v $HOME/Workspace:/home/developer/workspace \
+	-w /home/developer/workspace \
 	-v /tmp/.X11-unix:/tmp/.X11-unix \
 	batmat/docker-eclipse
 }
@@ -282,8 +284,11 @@ dhtop(){
 # IRC CLIENT #
 dirc() {
 	drm irc &>/dev/null
-	docker run -it --rm -e TERM \
-	--name irc --log-driver=none irssi:alpine
+	docker run -it --name irc -e TERM -u $(id -u):$(id -g) \
+    --log-driver=none \
+    -v $HOME/.irssi:/home/user/.irssi:ro \
+    -v /etc/localtime:/etc/localtime:ro \
+    irssi:alpine
 
 	clear
 }
@@ -418,6 +423,18 @@ dtelnet(){
 	docker run -it --rm \
 		--log-driver none \
 		jess/telnet "$@"
+}
+
+# TOR BROWSER #
+
+dtor-browser(){
+	drm tor-browser
+
+	docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY \
+			--device /dev/snd \
+			--name tor-browser \
+			jess/tor-browser
+
 }
 
 # TRACEROUTE #
