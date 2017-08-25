@@ -1,6 +1,8 @@
 #! /bin/bash
 echo -e '[*] Copying .dockerfunc to \$HOME'
 cp .dockerfunc $HOME
+echo '[*] Activating .dockerfunc'
+source $HOME/.dockerfunc
 echo '[*] Editting .bashrc script'
 echo '' >> $HOME/.bashrc
 echo '#Initializate PearlTheWhale Docker Alias' >> $HOME/.bashrc
