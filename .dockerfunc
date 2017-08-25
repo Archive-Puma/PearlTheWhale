@@ -1,9 +1,9 @@
 #!/bin/bash
 
 ###################################################
-##						 ##													 ##
-##	DOCKERFUNC FILE CREATED BY KIKEPUMA	 ##
-##						 ##													 ##
+##                                               ##
+##      DOCKERFUNC FILE CREATED BY KIKEPUMA      ##
+##                                               ##
 ###################################################
 
 ########################
@@ -12,7 +12,7 @@
 
 # LOAD ALIAS IN THIS SCRIPT #
 dalias(){
-	source $HOME/Docker/.dockerfunc 2>/dev/null
+	source $HOME/.dockerfunc 2>/dev/null
 	echo "[+] Docker alias loaded successfully"
 }
 
@@ -64,7 +64,7 @@ drm_stopped_containers(){
 	"[+] Removing all volumes"
 	local volumes
 	volumes=( $(docker ps --filter status=exited -q 2>/dev/null) )	#get all volumes
-	docker rm -v "${volumes[@]}" 2>/dev/null												#remove all volumes
+	docker rm -v "${volumes[@]}" 2>/dev/null	 #remove all volumes
 }
 
 # STOP ALL CONTAINERS #
