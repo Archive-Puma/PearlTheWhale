@@ -1,4 +1,4 @@
-<img src="https://cdn.rawgit.com/CosasDePuma/PearlTheWhale/a04d81bd/.img/pearl.gif" height="200" align="right">
+<img src="https://cdn.rawgit.com/CosasDePuma/PearlTheWhale/41b63c6a/.img/pearl.png" height="200" align="right">
 
 # Pearl The Whale
 [![Travis Build](https://img.shields.io/travis/CosasDePuma/PearlTheWhale.svg)](https://travis-ci.org/CosasDePuma/PearlTheWhale) [![Docker Version](https://img.shields.io/badge/docker-1.12.6-blue.svg?style=flat)](https://www.docker.com/community-edition) ![Made with Love](https://img.shields.io/badge/made%20with-<3-red.svg?style=flat)
