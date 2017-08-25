@@ -1,5 +1,4 @@
 FROM ubuntu:14.04
-#MAINTAINER "KikePuma"
 
 ARG VERSION="Ubuntu 1.0"
 ARG BUILD_DATE="23-April-2017"
