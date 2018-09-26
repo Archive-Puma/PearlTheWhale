@@ -2,10 +2,7 @@ sudo: required
 language: bash
 
 services:
-  - docker
-
-before_script:
-  - source .dockerfunc
+    - docker
 
 script:
-  - dalias
+    - docker run --rm -t cosasdepuma/searchsploit --help
