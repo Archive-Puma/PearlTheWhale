@@ -1,7 +1,7 @@
 <img src=".repository/pearl.png" height="200" align="right">
 
 # Pearl The Whale
-[![Travis Build](https://img.shields.io/travis/CosasDePuma/PearlTheWhale.svg)](https://travis-ci.org/CosasDePuma/PearlTheWhale) [![Docker Version](https://img.shields.io/badge/docker-18.06.1%20ce-blue.svg?style=flat)](https://www.docker.com/community-edition) ![Made with Love](https://img.shields.io/badge/made%20with-<3-red.svg?style=flat)
+[![Travis Build](https://img.shields.io/travis/CosasDePuma/PearlTheWhale.svg?style=for-the-badge)](https://travis-ci.org/CosasDePuma/PearlTheWhale) [![Docker Version](https://img.shields.io/badge/docker-18.06.1%20ce-blue.svg?style=for-the-badge)](https://www.docker.com/community-edition) ![Made with Love](https://img.shields.io/badge/made%20with-<3-red.svg?style=for-the-badge)
 
 
 :vhs: Clone me!
