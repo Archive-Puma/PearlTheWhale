@@ -6,4 +6,4 @@ services:
 
 script:
     - docker build --tag cosasdepuma/searchsploit Dockerfiles/searchsploit
-    - docker run --rm --tty --name searchsploit cosasdepuma/searchsploit --help
+    - docker run --rm --tty --name searchsploit cosasdepuma/searchsploit travis

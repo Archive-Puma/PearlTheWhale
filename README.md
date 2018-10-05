@@ -17,12 +17,12 @@ git clone https://github.com/cosasdepuma/pearlthewhale.git PearlTheWhale
 You can create compile all the Dockerfiles with the following command:
 
 ```bash
-docker build -t somename folder
+docker build --tag somename folder
 ```
 
 For example:
 ```bash
-docker build -t cosasdepuma:searchsploit searchsploit/
+docker build --tag cosasdepuma:searchsploit searchsploit/
 ```
 
 
