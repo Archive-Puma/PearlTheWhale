@@ -26,6 +26,21 @@ docker build --tag cosasdepuma:searchsploit searchsploit/
 ```
 
 
+:house_with_garden: Use my settings!
+----
+Download the script that I use in my Docker configuration:
+
+```bash
+curl -o $HOME/.dockerfunc https://raw.githubusercontent.com/CosasDePuma/Setup/master/linux/.dockerfunc
+```
+
+Modify your configuration to automatically load the file:
+
+```bash
+if ! grep -Fxq "source $HOME/.dockerfunc" $HOME/.bashrc; then echo "source $HOME/.dockerfunc" >> $HOME/.bashrc; fi
+```
+
+
 :computer: Not in my computer!
 ----
 > If you don't want to install Docker in your computer, you can [Play With Docker](labs.play-with-docker.com) online.
