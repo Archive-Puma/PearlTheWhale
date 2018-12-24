@@ -37,7 +37,7 @@ curl -o $HOME/.dockerfunc https://raw.githubusercontent.com/CosasDePuma/Setup/ma
 Modify your configuration to automatically load the file:
 
 ```bash
-if ! grep -Fxq "source $HOME/.dockerfunc" $HOME/.bashrc; then echo "source $HOME/.dockerfunc" >> $HOME/.bashrc; fi
+! grep -Fxq "source $HOME/.dockerfunc" $HOME/.bashrc && echo "source $HOME/.dockerfunc" >> $HOME/.bashrc
 ```
 
 
@@ -75,11 +75,11 @@ PearlTheWhale
 |__ .gitignore
 |__ LICENSE
 |__ README.md
- < CI/CD >
-|__ .travis.yml
 < Dockerfiles >
-|__ Dockerfiles
-  |__ searchsploit
+|__ circleci
+  |__ debian
+  |__ ubuntu
+|__ searchsploit
 ```
 
 

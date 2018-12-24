@@ -1,9 +1,0 @@
-sudo: required
-language: bash
-
-services:
-    - docker
-
-script:
-    - docker build --tag cosasdepuma/searchsploit Dockerfiles/searchsploit
-    - docker run --rm --tty --name searchsploit cosasdepuma/searchsploit travis
